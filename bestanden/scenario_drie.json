@@ -1,0 +1,236 @@
+{
+    "start": {
+        "plaats": "Hobbitstee, de Gouw",
+        "text": "Jij bent de uitverkorene die een ontmoeting moet regelen tussen Frodo en Gandalf. Je bent op dit moment in Hobbitstee in de Gouw. Wat wil je doen?",
+        "options": [
+            {"text": "Naar Balingshoek", "next_scene": "balingshoek_deel_een"},
+            {"text": "Eerst even rusten", "next_scene": "rusten"},
+            {"text": "Naar de Green Dragon Inn", "next_scene": "main_verhaal"}
+        ],
+        "background_image": "bestanden/Hobbiton.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "balingshoek_deel_een": {
+        "plaats": "Balingshoek, de Gouw",
+        "text": "Je loopt richting Balingshoek, waar Frodo zich op dit moment bevindt.",
+        "options": [
+            {"text": "Verder", "next_scene": "balingshoek_deel_twee"}
+        ],
+        "background_image": "bestanden/baggings_end.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "balingshoek_deel_twee": {
+        "plaats": "Balingshoek, de Gouw",
+        "text": "Balingshoek ziet er leeg uit. Je twijfelt of je op de deur wilt kloppen. Frodo weet al dat je voor hem bezig bent. Er is eigenlijk geen reden om nu nog met hem te spreken.",
+        "options": [
+            {"text": "Verder", "next_scene": "main_verhaal"}
+        ],
+        "background_image": "bestanden/baggings_end.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "rusten": {
+        "plaats": "Hobbitstee, de Gouw",
+        "text": "Je besluit te rusten en even te genieten van het uitzicht. De Hobbit Holes zijn prachtig en het is een goed moment om even stil te staan bij hoe rustig het hier is. Je kunt helaas niet lang genieten. Je hebt namelijk een taak.",
+        "options": [
+            {"text": "Verder", "next_scene": "main_verhaal"}
+        ],
+        "background_image": "bestanden/Hobbiton.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "main_verhaal": {
+        "plaats": "Green Dragon Inn, de Gouw",
+        "text": "Je gaat door naar de Green Dragon Inn, de ontmoetplek voor hobbits. Bij je binnenkomst hoor je vrolijke muziek en zie je dansende mensen. De plek heeft een gezellige sfeer. Je ziet een oudere mevrouw met donker haar alleen aan de bar zitten. Wat doe je?",
+        "options": [
+            {"text": "Je spreekt haar aan", "next_scene": "slecht_eind_deel_een"},
+            {"text": "Je gaat naast haar zitten, maar zegt niets", "next_scene": "naast_mevrouw"},
+            {"text": "Je negeert haar", "next_scene": "main_verhaal_deel_twee"}
+        ],
+        "background_image": "bestanden/green_dragon_inn.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "slecht_eind_deel_een": {
+        "plaats": "Green Dragon Inn, de Gouw",
+        "text": "Je besluit uit gezelligheid haar aan te spreken. Je drinkt een paar drankjes met haar en vergeet de tijd. Helaas ben je nogal een flapuit als je drinkt en verraad je per ongeluk je plannen om Frodo en Gandalf samen te brengen aan de vrouw. Je realiseert je ook te laat dat deze vrouw niemand minder dan Lobelia Buul-Balings is, de vrouw die niets liever wil dan Balingshoek overnemen. De plek waar Frodo nu woont.",
+        "options": [
+            {"text": "Verder", "next_scene": "slecht_eind_deel_twee"}
+        ],
+        "background_image": "bestanden/inside_inn.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "slecht_eind_deel_twee": {
+        "plaats": "Green Dragon Inn, de Gouw",
+        "text": "Je plannen worden al snel bekend, en de ontmoeting tussen Frodo en Gandalf kan niet meer veilig gebeuren. Helaas ben je niet snel genoeg om Frodo te waarschuwen en wordt hij ontvoerd door Orcs. Je hebt gefaald.",
+        "options": [
+            {"text": "Afgelopen", "next_scene": "quit3", "punten": 10}
+        ],
+        "background_image": "bestanden/saaad.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "naast_mevrouw": {
+        "plaats": "Green Dragon Inn, de Gouw",
+        "text": "Terwijl je gaat zitten en een keer kijkt naar de vrouw, realiseer je je dat dat Lobelia Buul-Balings is. De vrouw die het liefst Balingshoek wil overnemen van Frodo. Als ze hoorde over je plannen, zou waarschijnlijk alles mislukken.",
+        "options": [
+            {"text": "Verder", "next_scene": "main_verhaal_deel_twee"}
+        ],
+        "background_image": "bestanden/inside_inn.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "main_verhaal_deel_twee": {
+        "plaats": "Green Dragon Inn, de Gouw",
+        "text": "Je loopt door naar een tafeltje. Je had hier afgesproken met Sam. Je wacht een paar minuten.",
+        "options": [
+            {"text": "Verder", "next_scene": "sam_praat_deel_een"}
+        ],
+        "background_image": "bestanden/at_table.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "sam_praat_deel_een": {
+        "plaats": "Green Dragon Inn, de Gouw",
+        "text": "Sam: Ik had verwacht dat je al aan je vierde ale zou zitten.",
+        "options": [
+            {"text": "Verder", "next_scene": "sam_gaat_zitten"}
+        ],
+        "background_image": "bestanden/at_table_sam.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "sam_gaat_zitten": {
+        "plaats": "Green Dragon Inn, de Gouw",
+        "text": "Sam komt bij je aan tafel zitten. Je bestelt een ale voor hem en vertelt hem daarna over je plannen. Hij begrijpt het helemaal.",
+        "options": [
+            {"text": "Verder", "next_scene": "sam_praat_deel_twee"}
+        ],
+        "background_image": "bestanden/at_table_sam.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "sam_praat_deel_twee": {
+        "plaats": "Green Dragon Inn, de Gouw",
+        "text": "Sam: Dus jij moet ervoor zorgen dat Frodo Gandalf de Grijze ontmoet?",
+        "options": [
+            {"text": "Verder", "next_scene": "sam_blunder"}
+        ],
+        "background_image": "bestanden/at_table_sam.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "sam_blunder": {
+        "plaats": "Green Dragon Inn, de Gouw",
+        "text": "Hij zegt het iets te luid. Ondanks dat er veel geluid is in de inn, zie je de vrouw aan de bar nieuwsgierig opkijken. Wat doe je?",
+        "options": [
+            {"text": "Je wordt boos op Sam", "next_scene": "sam_slechte_richting"},
+            {"text": "Je trekt de aandacht naar je toe", "next_scene": "aandacht_vragen"},
+            {"text": "Je leidt de aandacht van je weg", "next_scene": "nog_een_slechte_richting"}
+        ],
+        "background_image": "bestanden/at_table_sam.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "sam_slechte_richting": {
+        "plaats": "Green Dragon Inn, de Gouw",
+        "text": "Sam houdt snel zijn hand voor zijn mond, maar het helpt niet tegen de nieuwsgierige ogen van de vrouw. ",
+        "options": [
+             {"text": "Verder", "next_scene": "nog_een_slechte_richting"}
+        ],
+        "background_image": "bestanden/at_table_sam.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "aandacht_vragen": {
+        "plaats": "Green Dragon Inn, de Gouw",
+        "text": "Je besluit de aandacht op een andere manier te trekken. Je gooit vrolijk je ale over de vloer en doet een dronken dans. De mensen in de kroeg gaan wild. De vrouw rolt haar ogen en drinkt haar drankje verder.",
+        "options": [
+             {"text": "Verder", "next_scene": "sam_praat_deel_drie"}
+        ],
+        "background_image": "bestanden/at_table.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "nog_een_slechte_richting": {
+        "plaats": "Green Dragon Inn, de Gouw",
+        "text": "Je probeert de aandacht van je weg te leiden, maar het lukt niet. De vrouw realiseert zich dat ze iets belangrijks heeft gehoord, en jij realiseert je dat deze vrouw niemand minder dan Lobelia Buul-Balings is, de vrouw die niets liever wil dan Balingshoek overnemen. De plek waar Frodo nu woont.",
+        "options": [
+            {"text": "Verder", "next_scene": "slecht_eind_deel_twee"}
+        ],
+        "background_image": "bestanden/at_table.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "sam_praat_deel_drie": {
+        "plaats": "Green Dragon Inn, de Gouw",
+        "text": "Sam: Dat was slim. Het is hier wel erg luid. Ik kan je bijna niet verstaan. Zullen we ergens anders verder praten?",
+        "options": [
+            {"text": "Ja", "next_scene": "antwoord_ja"},
+            {"text": "Nee", "next_scene": "antwoord_nee"}
+        ],
+        "background_image": "bestanden/at_table_sam.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "antwoord_nee": {
+        "plaats": "Green Dragon Inn, de Gouw",
+        "text": "Je wilt rustig je drankje blijven drinken en gaat weer zitten. Echter is het heel erg rumoerig en kun je nu Sam ook bijna niet horen. Je gaat alsnog naar buiten.",
+        "options": [
+            {"text": "Verder", "next_scene": "antwoord_ja"}
+        ],
+        "background_image": "bestanden/at_table_sam.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "antwoord_ja": {
+        "plaats": "Green Dragon Inn (buiten), de Gouw",
+        "text": "Je gaat naar buiten met Sam. Het is frisjes en Sam rilt, maar het is hier niet rumoerig. Je vertelt aan Sam hoe je hem nodig hebt bij de ontmoeting tussen Gandalf en Frodo te regelen. Je hoort geluid. De nieuwsgierige vrouw is achter je aangelopen. Wat doe je?",
+        "options": [
+            {"text": "Je loopt weg samen met Sam.", "next_scene": "richting_goed_eind"},
+            {"text": "Je confronteert de vrouw.", "next_scene": "weer_slechte_richting"},
+            {"text": "Je negeert de vrouw", "next_scene": "negeren_vrouw"}
+        ],
+        "background_image": "bestanden/outside_inn_2_sam.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "weer_slechte_richting": {
+        "plaats": "Green Dragon Inn (buiten), de Gouw",
+        "text": "Dit was geen goed idee. De vrouw, Lobelia, wordt boos en begint te schreeuwen dat ze niemand wilde lastigvallen. Op zichzelf lijkt dat niet erg, maar de gevolgen zijn wel erg. Ze gaat de komende paar uur mensen wel degelijk lastigvallen en ze vertellen van een hobbit en zijn vriend die haar slecht behandelden. Daarnaast vertelt ze ook over je plannen om Frodo en Gandalf samen te brengen.",
+        "options": [
+            {"text": "Verder", "next_scene": "slecht_eind_deel_twee"}
+        ],
+        "background_image": "bestanden/outside_inn_2.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "negeren_vrouw": {
+        "plaats": "Green Dragon Inn (buiten), de Gouw",
+        "text": "De vrouw lijkt schaamteloos en blijft achter jullie staan in de hoop dat ze nog meer interessante informatie kan opvangen. Je begint je te ergeren en confronteert haar.",
+        "options": [
+            {"text": "Verder", "next_scene": "weer_slechte_richting"}
+        ],
+        "background_image": "bestanden/outside_inn_2.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "richting_goed_eind": {
+        "plaats": "Green Dragon Inn (buiten), de Gouw",
+        "text": "Weglopen van de vrouw was het juiste idee. Jullie lopen in stilte. De vrouw volgt jullie voor een tijdje, maar druipt op een gegeven moment af. Eindelijk kunnen jullie de plannen bespreken. Sam is vriendelijk, maar wel erg scherp en begrijpt al snel wat hij moet doen. Hij heeft namelijk voor Bilbo als tuinier gewerkt. Over een paar dagen is het verjaardagsfeest van Frodo en Bilbo, en Sam moet daar ook bij zijn. Hij zal ervoor zorgen dat de ontmoeting vlekkeloos zal verlopen. Hij zal Gandalf leiden naar de juiste plek.",
+        "options": [
+            {"text": "Verder", "next_scene": "goed_einde"}
+        ],
+        "background_image": "bestanden/outside_inn_2_sam.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "goed_einde": {
+        "plaats": "Green Dragon Inn (buiten), de Gouw",
+        "text": "Gefeliciteerd. Je hebt ervoor gezorgd dat Gandalf Frodo kan ontmoeten. Je bent geslaagd! ",
+        "options": [
+            {"text": "Afgelopen", "next_scene": "quit3"}
+        ],
+        "background_image": "bestanden/outside_inn_2.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "quit3": {
+        "plaats": "Einde",
+        "text": "Vaarwel",
+        "options": [
+            {"text": "terug naar main menu", "next_scene": "quit3"}
+        ],
+        "background_image": "bestanden/Hobbiton.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    },
+    "rusten_hobbit": {
+        "plaats": "Hobbitstee, de Gouw",
+        "text": "Toch besluit je nog even wat worstjes te bakken boven een kampvuur. Je bent tenslotte een hobbit en als je gaat rusten moet je of een liter of 10 aan bier achterover slaan of een paar worstjes eten. Je hebt namelijk een taaie dag voor de boeg.",
+        "options": [
+            {"text": "Verder", "next_scene": "main_verhaal"}
+        ],
+        "background_image": "bestanden/Hobbiton.jpeg",
+        "music": "bestanden/02 Concerning Hobbits.mp3"
+    }
+}

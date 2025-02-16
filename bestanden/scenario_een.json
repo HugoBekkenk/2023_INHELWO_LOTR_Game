@@ -1,0 +1,418 @@
+{
+    "start": {
+        "plaats": "Ingang, Moria mijnen",
+        "text": "Je moet in Moria zien te komen en hebt helaas geen andere keuze dan door de gevaarlijke, donkere mijnen te gaan. Je bent al een tijd onderweg. Elke stap die je zet geeft een dof geluid. De lucht is vochtig. Na een uur lopen neem je een korte pauze om te kijken waar je bent. Je kijkt om je heen. Er is bijna niets te zien. De fakkel die je hebt, voelt nutteloos. Opeens klinkt er in de verte een hoge, schrille gil. Het geluid lijkt van een mens te komen, misschien zelfs van een elf, maar je weet niet zeker of dat zo is. Turend in het donker hou je je adem in, om nogmaals aandachtig te kunnen luisteren.",
+        "options": [
+            {"text": "Verder", "next_scene": "begin_mijnen"}
+        ],
+        "background_image": "bestanden/Moria.jpeg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "begin_mijnen": {
+        "plaats": "Ingang, Moria mijnen",
+        "text": "Je luistert voor een paar minuten. Doodse stilte. Dan kijk je nogmaals om je heen. Er zijn drie wegen. Wat doe je?",
+        "options": [
+            {"text": "Loop naar het geluid toe", "next_scene": "main_verhaal"},
+            {"text": "Loop de donkerste tunnel in", "next_scene": "sub_verhaal"},
+            {"text": "Loop de veilig uitziende tunnel in", "next_scene": "keer_om"}
+        ],
+        "background_image": "bestanden/verder_mijnentunnel.jpg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "keer_om": {
+        "plaats": "Doodlopende tunnel",
+        "text": "Helaas! De veilig uitziende tunnel loopt dood. Je keert om en loopt terug richting het geluid. Hopend dat het niets gevaarlijks is.",
+        "options": [
+            {"text": "Verder", "next_scene": "main_verhaal"}
+        ],
+        "background_image": "bestanden/dead_end.jpeg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "sub_verhaal": {
+        "plaats": "Donkere tunnel, Moria mijnen",
+        "text": "Je gaat het donker in. Je ziet minder, maar je bent verder weg van het geluid. Terwijl je doorloopt, struikel je plotseling over een steen. Je valt met je knieën op de natte stenen in de mijnen. Ontmoedigd klim je weer omhoog. Je probeert de grot door te kijken en ziet dan ineens Lembas liggen. Wat doe je?",
+        "options": [
+            {"text": "Je pakt het en eet het", "next_scene": "sub_verhaal_deel_twee"},
+            {"text": "Je laat het liggen", "next_scene": "sub_verhaal_deel_twee"},
+            {"text": "Je vertrapt het en loopt weg", "next_scene": "sub_verhaal_deel_twee"}
+        ],
+        "background_image": "bestanden/andere_donkere_mijnen_tunnel.jpg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "sub_verhaal_deel_twee": {
+        "plaats": "Donkere tunnel, Moria mijnen",
+        "text": "Je hebt spijt dat je de donkere tunnel bent ingelopen, maar wilt niet teruggaan. Je zucht en besluit door te lopen.",
+        "options": [
+            {"text": "Verder", "next_scene": "nieuw_persoon"}
+        ],
+        "background_image": "bestanden/andere_donkere_mijnen_tunnel.jpg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "main_verhaal": {
+        "plaats": "Diepere tunnel, Moria mijnen",
+        "text": "Na een tijdje lopen, stop je. Je hoort nog een geluid. Het klinkt als een zware rots die valt in het water. Het geluid zelf beangstigt je niet, maar de aanwezigheid van het geluid betekent dat er iets is dat het geluid maakt.",
+        "options": [
+            {"text": "Verder", "next_scene": "nieuw_persoon"}
+        ],
+        "background_image": "bestanden/donkere_mijnentunnel.jpg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "nieuw_persoon": {
+        "plaats": "Diepere tunnel, Moria mijnen",
+        "text": "???: Wat hebben we hier?",
+        "options": [
+            {"text": "Verder", "next_scene": "nieuw_persoon_twee"}
+        ],
+        "background_image": "bestanden/donkere_mijnentunnel.jpg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "nieuw_persoon_twee": {
+        "plaats": "Diepere tunnel, Moria mijnen",
+        "text": "Je schrikt van een luide stem die van achteren komt. Je draait je om en ziet een onbekend tweetal.",
+        "options": [
+            {"text": "Verder", "next_scene": "schrik_van_gimli"}
+        ],
+        "background_image": "bestanden/donkere_mijnentunnel.jpg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "schrik_van_gimli": {
+        "plaats": "Diepere tunnel, Moria mijnen",
+        "text": "???: Wie ben je en wat doe je hier?",
+        "options": [
+            {"text": "Verder", "next_scene": "eerste_ontmoeting"}
+        ],
+        "background_image": "bestanden/donkere_mijnentunnel_gimli.jpg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "eerste_ontmoeting": {
+        "plaats": "Diepere tunnel, Moria mijnen",
+        "text": "Je ziet een raar duo. Een dwerg en een elf. De elf houdt een pijl en boog vast en richt hem op je, alsof je een gevaarlijke bedreiging bent. Wat zeg je?",
+        "options": [
+            {"text": "Ik ben {naam} en ik ben op zoek naar de weg naar Moria", "next_scene": "vreedzaam_oplossen", "punten": 0},
+            {"text": "Zeg niets", "next_scene": "gimli_boos", "punten": -10},
+            {"text": "Ik vertel je alles als je je wapen omlaag doet", "next_scene": "skeptische_legolas", "punten": 10}
+        ],
+        "background_image": "bestanden/donkere_mijnentunnel_legolas.jpg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "gimli_boos": {
+        "plaats": "Diepere tunnel, Moria mijnen",
+        "text": "Gimli: “Een stil type, he? Misschien praat je wel tegen mijn bijl! Legolas: “Gimli, doe je wapen weg. We kunnen dit waarschijnlijk wel vreedzaam oplossen.",
+        "options": [
+            {"text": "Verder", "next_scene": "vreedzaam_oplossen"}
+        ],
+        "background_image": "bestanden/donkere_mijnentunnel_gimli.jpg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "skeptische_legolas": {
+        "plaats": "Diepere tunnel, Moria mijnen",
+        "text": "Stilte. Legolas doet z’n wapen niet weg. Omdat je geen zin hebt in een pijl in je lichaam, besluit je toch te vertellen wat je hier doet.",
+        "options": [
+            {"text": "Verder", "next_scene": "vreedzaam_oplossen"}
+        ],
+        "background_image": "bestanden/donkere_mijnentunnel_legolas.jpg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "vreedzaam_oplossen": {
+        "plaats": "Diepere tunnel, Moria mijnen",
+        "text": "Legolas doet zijn wapen weg.",
+        "options": [
+             {"text": "Verder", "next_scene": "vreedzaam_oplossen_twee"}
+        ],
+        "background_image": "bestanden/donkere_mijnentunnel_legolas.jpg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "vreedzaam_oplossen_twee": {
+        "plaats": "Diepere tunnel, Moria mijnen",
+        "text": "Legolas: Dus je bent ook op zoek naar de uitweg. Ik kan zien dat je een goed persoon bent, dus laten we samen zoeken",
+        "options": [
+             {"text": "Verder", "next_scene": "vreedzaam_oplossen_drie"}
+        ],
+        "background_image": "bestanden/donkere_mijnentunnel_legolas.jpg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "vreedzaam_oplossen_drie": {
+        "plaats": "Diepere tunnel, Moria mijnen",
+        "text": "Gimli gromt chagrijnig, maar knikt. Je gaat met z'n drieen verder door de mijnen. Je hoort de hoge schreeuw van eerder opnieuw. Wat doe je?",
+        "options": [
+            {"text": "Zelfverzekerd storm je naar het geluid", "next_scene": "gimli_weer_boos"},
+            {"text": "Je vlucht weg", "next_scene": "neutraal_einde"},
+            {"text": "Je volgt Gimli en Legolas, die sluipend op het geluid afgaan", "next_scene": "verder_sluipen"}
+        ],
+        "background_image": "bestanden/verder_in_tunnel_gimli.jpeg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "neutraal_einde": {
+        "plaats": "Duistere tunnel, Moria mijnen",
+        "text": "Je rent de duisternis in zonder om te kijken. Na wat uren lijkt, stop je met rennen en realiseer je je dat je niet weet waar je bent. Je hebt teveel afslagen genomen. Je bent verdwaald. Misschien vind je ooit je weg weer naar buiten.",
+        "options": [
+            {"text": "Afgelopen", "next_scene": "quit1", "punten": 10}
+        ],
+        "background_image": "bestanden/neutraal_einde.jpeg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "gimli_weer_boos": {
+        "plaats": "Diepere tunnel, Moria mijnen",
+        "text": "Legolas: Nee, stop! Gimli: Hij is nog idioter dan jij. Ze rennen achter je aan. Je voelt een hand op je arm en wordt naar achteren getrokken.",
+        "options": [
+            {"text": "Verder", "next_scene": "verder_sluipen"}
+        ],
+        "background_image": "bestanden/nog_verder_legolas.jpeg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "verder_sluipen": {
+        "plaats": "Diepere tunnel, Moria mijnen",
+        "text": "Legolas: Het zijn angstige geesten. Je moet heel voorzichtig zijn hier. Gimli: Als ze je zien, is het over voor ons alle drie.",
+        "options": [
+            {"text": "Verder", "next_scene": "in_gevaar"}
+        ],
+        "background_image": "bestanden/nog_verder_legolas.jpeg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "in_gevaar": {
+        "plaats": "Diepere tunnel, Moria mijnen",
+        "text": "Je ziet de geesten niet, maar je hoort wel ineens een zacht brommend geluid bij je oor. Alsof er een dier bij je oor zit te grommen. Legolas en Gimli blijven muisstil. Wat doe je?",
+        "options": [
+            {"text": "Je waagt het erop en springt weg", "next_scene": "richting_slechte_eind"},
+            {"text": "Je wacht tot het geluid zachter wordt en weggaat", "next_scene": "richting_einde"},
+            {"text": "Je doet niets", "next_scene": "richting_einde"}
+        ],
+        "background_image": "bestanden/nog_verder.jpeg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "richting_slechte_eind": {
+        "plaats": "Duistere tunnel, Moria mijnen",
+        "text": "Je hoort een harde schreeuw en rent hard weg. Als je goed luistert, hoor je dat iets je achterna komt. Je rent net zolang totdat je weer een kruispunt bereikt. Gimli en Legolas zijn ver achter je. Je sprint een van de tunnels in.",
+        "options": [
+            {"text": "Verder", "next_scene": "slecht_einde_deel_een"}
+        ],
+        "background_image": "bestanden/andere_donkere_mijnen_tunnel.jpg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "richting_einde": {
+        "plaats": "Duistere tunnel, Moria mijnen",
+        "text": "Uiteindelijk kun je verder lopen en bereik je een kruispunt. Welke kant gaan jullie op?",
+        "options": [
+            {"text": "Oost", "next_scene": "goed_einde"},
+            {"text": "West", "next_scene": "slecht_einde_deel_een"}
+        ],
+        "background_image": "bestanden/nog_verder.jpeg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "goed_einde": {
+        "plaats": "Einde, Moria mijnen",
+        "text": "Je loopt nog een tijdje door en ziet uiteindelijk weer licht. Je hebt de andere kant van Moria bereikt. Gefeliciteerd!",
+        "options": [
+            {"text": "Afgelopen", "next_scene": "quit1", "punten": 10}
+        ],
+        "background_image": "bestanden/richting_goed_einde.jpeg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "slecht_einde_deel_een": {
+        "plaats": "???, Moria mijnen",
+        "text": "Je loopt nog een tijdje door en ziet de tunnel alleen maar donkerder worden. De lucht wordt vochtiger en er is steeds minder geluid. Opeens hoor je een steen vallen. Daarna nog een. Daarna hoor je een groep stenen vallen. De muren van de grot maken een geluid alsof ze bewogen worden. Je merkt opeens dat het plafond van de tunnel veel hoger is. En dan..",
+        "options": [
+            {"text": "Verder", "next_scene": "slecht_einde_deel_twee"}
+        ],
+        "background_image": "bestanden/slecht_eind.jpeg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "slecht_einde_deel_twee": {
+        "plaats": "Balrog Nest, Moria mijnen",
+        "text": "Sta je oog in oog met een Balrog. Hij valt je aan. Ongeacht hoe getraind en machtig je bent, wordt dit een vreselijk moeilijk gevecht",
+        "options": [
+            {"text": "Verder", "next_scene": "gevecht", "punten": 10}
+        ],
+        "background_image": "bestanden/background_balrog_goed.jpg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3",
+        "monster_stats": "Balrog;15;10;25;6"
+    },
+    "quit1": {
+        "plaats": "Einde",
+        "text": "Vaarwel!",
+        "options": [
+            {"text": "terug naar main menu", "next_scene": "quit1"}
+        ],
+        "background_image": "bestanden/Moria.jpeg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "dwerg_is_gaaf": {
+        "plaats": "Einde, Moria mijnen",
+        "text": "Er is een klein gat in de muur waar je alleen als dwerg precies doorheen kan. Zodra je door het gat bent gekropen zie je opeens een grote ruimte. Je bent in een grote zaal. Je ziet een grote trap die naar beneden gaat. Je ziet ook een gang waar licht uit komt.",
+        "options": [
+            {"text": "Loop naar de gang", "next_scene": "goed_einde"}
+        ],
+        "background_image": "bestanden/richting_goed_einde.jpeg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "elf_is_gaaf": {
+        "plaats": "Diepere tunnel, Moria mijnen",
+        "text": "Je ziet een dwerg en een elf die verbaasd naar je staren. Ze hadden nooit verwacht een andere elf in deze grotten tegen te komen.",
+        "options": [
+            {
+                "text": "Verder",
+                "next_scene": "elf_is_gaaf_twee"
+            }
+        ],
+        "background_image": "bestanden/donkere_mijnentunnel.jpg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "elf_is_gaaf_twee": {
+        "plaats": "Diepere tunnel, Moria mijnen",
+        "text": "Legolas: Wat doe jij hier? Je bent een elf. Je hoort hier niet te zijn. Je hoort in Lothlorien te zijn. Wat doe je hier? Maakt ook niet uit je bent een elf dus we zullen samen proberen de uitgang te vinden.",
+        "options": [
+            {
+                "text": "Verder",
+                "next_scene": "vreedzaam_oplossen_drie"
+            }
+        ],
+        "background_image": "bestanden/donkere_mijnentunnel.jpg",
+        "music": "bestanden/01 The Prophecy.mp3"
+    },
+    "slecht_einde_deel_een_mens": {
+        "plaats": "Balrog Nest, Moria mijnen",
+        "text": "Je pakt je zwaard en rent op de gedaante af. Je zwaait je zwaard en raakt de gedaante, maar het lijkt geen effect te hebben. De gedaante slaat je met een harde klap tegen de grond. Je ziet een grote schaduw boven je. Je hebt geen tijd om te reageren. Je reis eindigt in vuur en schaduw.",
+        "options": [
+            {"text": "Verder", "next_scene": "gevecht"}
+        ],
+        "background_image": "bestanden/background_balrog_goed.jpg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "gevecht": {
+        "plaats": "Balrog Nest, Moria mijnen",
+        "text": "Wat kun je doen als je oog in oog staat met zoon vreselijk monster",
+        "options": [
+            {"text": "Probeer weg te rennen", "next_scene": "ontsnappen"},
+            {"text": "{speciale_aanval} {bruikbaar}", "next_scene": "gevecht_speciale_aanvallen"},
+            {"text": "Val aan", "next_scene": "gevecht_aanvallen"}
+        ],
+        "background_image": "bestanden/background_balrog_goed.jpg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "gevecht_aanvallen": {
+        "plaats": "Balrog Nest, Moria mijnen",
+        "text": "{naam} probeert de balrog aan te vallen",
+        "options": [
+            {"text": "Verder", "next_scene": "gevecht_aanvallen_gelukt"}
+        ],
+        "background_image": "bestanden/background_balrog_goed.jpg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+     "gevecht_speciale_aanvallen": {
+        "plaats": "Balrog Nest, Moria mijnen",
+        "text": "Je probeerd de balrog aan te vallen",
+        "options": [
+            {"text": "Verder", "next_scene": "gevecht_speciale_aanvallen_gelukt"}
+        ],
+        "background_image": "bestanden/background_balrog_goed.jpg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "gevecht_speciale_aanvallen_mislukt": {
+        "plaats": "Balrog Nest, Moria mijnen",
+        "text": "Je kan je speciale aanval niet meer gebruiken",
+        "options": [
+            {"text": "Verder", "next_scene": "gevecht"}
+        ],
+        "background_image": "bestanden/background_balrog_goed.jpg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+     "gevecht_speciale_aanvallen_gelukt": {
+        "plaats": "Balrog Nest, Moria mijnen",
+        "text": "{speciale_aanval_text}",
+        "options": [
+            {"text": "Verder", "next_scene": "gevecht_aangevallen"}
+        ],
+        "background_image": "bestanden/background_balrog_goed.jpg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "gevecht_aanvallen_gelukt": {
+        "plaats": "Balrog Nest, Moria mijnen",
+        "text": "{naam} valt de balrog aan",
+        "options": [
+            {"text": "Verder", "next_scene": "gevecht_aangevallen"}
+        ],
+        "background_image": "bestanden/background_balrog_goed.jpg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "gevecht_aangevallen": {
+        "plaats": "Balrog Nest, Moria mijnen",
+        "text": "De balrog probeert {naam} aan te vallen",
+        "options": [
+            {"text": "Verder", "next_scene": "gevecht_aangevallen_gelukt"}
+        ],
+        "background_image": "bestanden/background_balrog_goed.jpg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "gevecht_aangevallen_mislukt": {
+        "plaats": "Balrog Nest, Moria mijnen",
+        "text": "De balrog lukt het niet jouw sterke verdediging te breken",
+        "options": [
+            {"text": "Verder", "next_scene": "gevecht"}
+        ],
+        "background_image": "bestanden/background_balrog_goed.jpg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "gevecht_aangevallen_gelukt": {
+        "plaats": "Balrog Nest, Moria mijnen",
+        "text": "De balrog valt {naam} aan",
+        "options": [
+            {"text": "Verder", "next_scene": "gevecht"}
+        ],
+        "background_image": "bestanden/background_balrog_goed.jpg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "gevecht_aanvallen_mislukt": {
+        "plaats": "Balrog Nest, Moria mijnen",
+        "text": "De balrog vernietigt {naam}",
+        "options": [
+            {"text": "Verder", "next_scene": "quit1"}
+        ],
+        "background_image": "bestanden/background_balrog_goed.jpg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "gevecht_monster_verslagen": {
+        "plaats": "Balrog Nest, Moria mijnen",
+        "text": "{naam} heeft de balrog compleet verslagen en gaat nu verder zoeken naar de uitgang",
+        "options": [
+            {"text": "Verder", "next_scene": "level_up"}
+        ],
+        "background_image": "bestanden/background_balrog_goed.jpg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "ontsnappen": {
+        "plaats": "Balrog Nest, Moria mijnen",
+        "text": "{naam} probeert te ontspappen",
+        "options": [
+            {"text": "Verder", "next_scene": "ontsnapt"}
+        ],
+        "background_image": "bestanden/background_balrog_goed.jpg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "gevonden": {
+        "plaats": "Balrog Nest, Moria mijnen",
+        "text": "De Balrog spot je en maakt zich klaar om je aan te vallen!",
+        "options": [
+            {"text": "Verder", "next_scene": "gevecht_aangevallen"}
+        ],
+        "background_image": "bestanden/background_balrog_goed.jpg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "ontsnapt": {
+        "plaats": "Balrog Nest, Moria mijnen",
+        "text": "Het is gelukt om te ontsnappen! {naam} gaat nu verder zoeken naar de uitgang",
+        "options": [
+            {"text": "Verder", "next_scene": "goed_einde"}
+        ],
+        "background_image": "bestanden/background_balrog_goed.jpg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "level_up": {
+        "plaats": "Balrog Nest, Moria mijnen",
+        "text": "{naam} is level up! Als zijn statistieken gaan met 1 omhoog en krijgt al zijn levens terug",
+        "options": [
+            {"text": "Verder", "next_scene": "goed_einde"}
+        ],
+        "background_image": "bestanden/background_balrog_goed.jpg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    }
+}

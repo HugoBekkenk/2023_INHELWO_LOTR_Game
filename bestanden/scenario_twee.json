@@ -1,0 +1,439 @@
+{
+    "start": {
+        "plaats": "In de landschappen van Gondor",
+        "text": "Je wilt naar Dol Amroth, een plek ten Zuiden van Gondor. Je wilt daar naartoe om hulp te krijgen van de zwanenridders. Je bent al een tijd onderweg en ziet eindelijk de kust in de verte. Waar ga je nu naartoe?",
+        "options": [
+            {"text": "Richting de kust", "next_scene": "main_verhaal"},
+            {"text": "Eerst even rusten", "next_scene": "rusten_deel_een"},
+            {"text": "Richting de berg", "next_scene": "sub_verhaal"}
+        ],
+        "background_image": "bestanden/DolamrothIntro.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "rusten_deel_een": {
+        "plaats": "In de landschappen van Gondor",
+        "text": "Je neemt een rustmoment van de lange reis. Je neemt een moment om te kijken naar het landschap en te genieten van de frisse lucht.",
+        "options": [
+            {"text": "Verder", "next_scene": "rusten_deel_twee"}
+        ],
+        "background_image": "bestanden/Rusten_een.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "rusten_deel_twee": {
+        "plaats": "In de landschappen van Gondor",
+        "text": "Nu je weer wat energie hebt, ga je verder op je pad. ",
+        "options": [
+            {"text": "Verder", "next_scene": "main_verhaal"}
+        ],
+        "background_image": "bestanden/Rusten_een.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "sub_verhaal": {
+        "plaats": "Berglandschap, Gondor",
+        "text": "Je besluit eerst een omweg te nemen. Als je een tijdje aan het lopen ben, hoor je ineens paarden en schreeuwende mensen. Je verstopt je. Het zijn de gevreesde Corsairs. Zonder te veel geluid te maken, sluip je terug naar je originele pad. Geen omweg dus.",
+        "options": [
+            {"text": "Verder", "next_scene": "main_verhaal"}
+        ],
+        "background_image": "bestanden/Corsairs_tegenkomen.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "main_verhaal": {
+        "plaats": "Bergpad, Gondor",
+        "text": "Het pad verandert langzaam van grind naar zand. In de verte zie je een man zitten op het gras. Je loopt nieuwsgierig naar hem. Hij lijkt te mediteren. Wat doe je?",
+        "options": [
+            {"text": "Je negeert hem", "next_scene": "negeren_imrahil"},
+            {"text": "Je vraagt hem of je op de goede weg bent", "next_scene": "main_verhaal_deel_twee"},
+            {"text": "Je valt hem aan", "next_scene": "val_hem_aan"}
+        ],
+        "background_image": "bestanden/Onderweg_een_imrahil.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "val_hem_aan": {
+        "plaats": "Bergpad, Gondor",
+        "text": "Hij zou een bedreiging kunnen zijn. Je pakt je wapen en sprint op hem af. Echter had hij je natuurlijk al aan zien komen. De man springt vlot van zijn plek en zet zijn voet tegen je scheenbeen. Je struikelt hierdoor. Zonder een woord te zeggen, pakt hij zijn zwaard en is klaar voor een gevecht",
+        "options": [
+            {"text": "Verder", "next_scene": "gevecht"}
+        ],
+        "background_image": "bestanden/Onderweg_een_imrahil.jpeg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3",
+        "monster_stats": "Imrahil;15;12;20;5"
+    },
+    "einde_zonder_imrahil": {
+        "plaats": "Dol Amroth, Gondor",
+        "text": "Als je uiteindelijk aankomt in Dol Amroth, praat je met de leider van de zwanenridders. Ze vertellen je over hun prins, Imrahil, en hun beschrijving lijkt verdacht veel op de man die je hebt aangevallen. Je kunt ze uiteindelijk niet overtuigen om hun hulp te geven. Verslagen ga je terug naar waar je vandaan komt",
+        "options": [
+            {"text": "Afgelopen", "next_scene": "quit2", "punten": 10}
+        ],
+        "background_image": "bestanden/Zonder_Imrahil.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "negeren_imrahil": {
+        "plaats": "Bergpad, Gondor",
+        "text": "Je loopt door zonder iets te zeggen. Echter, opeens hoor je de man zijn stem.",
+        "options": [
+            {"text": "Verder", "next_scene": "negeren_imrahil_deel_twee"}
+        ],
+        "background_image": "bestanden/Onderweg_een.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "negeren_imrahil_deel_twee": {
+        "plaats": "Bergpad, Gondor",
+        "text": "Imrahil: Bent u op weg naar Dol Amroth?",
+        "options": [
+            {"text": "Verder", "next_scene": "negeren_imrahil_deel_drie"}
+        ],
+        "background_image": "bestanden/Onderweg_een_imrahil.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "negeren_imrahil_deel_drie": {
+        "plaats": "Bergpad, Gondor",
+        "text": "Je stopt met lopen en knikt. Corsair of niet, de man ziet er niet uit als een bedreiging.",
+        "options": [
+            {"text": "Verder", "next_scene": "main_verhaal_deel_drie"}
+        ],
+        "background_image": "bestanden/Onderweg_een.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "main_verhaal_deel_twee": {
+        "plaats": "Bergpad, Gondor",
+        "text": "De man gaat staan. Hij knikt en steekt zijn hand uit.",
+        "options": [
+            {"text": "Verder", "next_scene": "imrahil_praat_deel_een"}
+        ],
+        "background_image": "bestanden/Onderweg_een_imrahil.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "imrahil_praat_deel_een": {
+        "plaats": "Bergpad, Gondor",
+        "text": "Imrahil: Mijn naam is Imrahil, prins van Dol Amroth",
+        "options": [
+            {"text": "Verder", "next_scene": "main_verhaal_deel_drie"}
+        ],
+        "background_image": "bestanden/Onderweg_een_imrahil.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "main_verhaal_deel_drie": {
+        "plaats": "Bergpad, Gondor",
+        "text": "Verbijsterd stel je jezelf voor en vraagt hem waarom hij niet in Dol Amroth is. Imrahil vertelt dat hij onderweg was om hulp te halen tegen de Corsairs. Je vertelt hem dat je ze net bent tegengekomen. Hij kijkt verschrikt, bedankt je en gaat snel weg, richting de Corsairs. Het was een kort gesprek. Je kunt nu kiezen. Het is geen slecht idee om achter de prins aan te gaan om hem te helpen. Echter wil je wel graag verder. Wat doe je?",
+        "options": [
+            {"text": "Je gaat achter de prins aan", "next_scene": "volg_prins_deel_een"},
+            {"text": "Je gaat door naar Dol Amroth", "next_scene": "naar_dol_amroth"}
+        ],
+        "background_image": "bestanden/Onderweg_een_imrahil.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "volg_prins_deel_een": {
+        "plaats": "Bij Corsair land, Gondor",
+        "text": "Je sprint achter hem aan. Het duurt niet lang voordat je hem gevonden hebt. Imrahil stopt met lopen. Hij kijkt je vreemd aan",
+        "options": [
+             {"text": "Verder", "next_scene": "volg_prins_deel_twee"}
+        ],
+        "background_image": "bestanden/Verdergaan_imrahil.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "volg_prins_deel_twee": {
+        "plaats": "Bij Corsair land, Gondor",
+        "text": "Imrahil: Moet u niet naar Dol Amroth?",
+        "options": [
+             {"text": "Verder", "next_scene": "volg_prins_deel_drie"}
+        ],
+        "background_image": "bestanden/Verdergaan_imrahil.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "volg_prins_deel_drie": {
+        "plaats": "Bij Corsair land, Gondor",
+        "text": "Je vertelt hem dat je hem wilt helpen tegen de Corsairs. Hij schudt zijn hoofd.",
+        "options": [
+            {"text": "Verder", "next_scene": "volg_prins_deel_vier"}
+        ],
+        "background_image": "bestanden/Verdergaan_imrahil.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "volg_prins_deel_vier": {
+        "plaats": "Bij Corsair land, Gondor",
+        "text": "Imrahil: Ik reis niet met vreemden. Al helemaal niet met een vreemde {ras}",
+        "options": [
+            {"text": "Verder", "next_scene": "volg_prins_deel_vijf", "punten": 10}
+        ],
+        "background_image": "bestanden/Verdergaan_imrahil.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "volg_prins_deel_vijf": {
+        "plaats": "Bij Corsair land, Gondor",
+        "text": "Je schudt je hoofd en vertelt hem dat je meestal ook niet reist met vreemden, al helemaal geen vreemde mensen. Hij lacht. Uiteindelijk wil hij toch met je reizen. Al is het maar voor het gezelschap. Het duurt niet lang voordat jullie Corsairs hebben gevonden. Het geluid van de paarden en hun taal is luid te horen. Als je je omdraait, zie je een groep Corsairs op jullie afstormen. Wat doe je?",
+        "options": [
+            {"text": "Je verstopt je", "next_scene": "eerste_slechte_eind"},
+            {"text": "Je vlucht", "next_scene": "eerste_slechte_eind"},
+            {"text": "Je doet alsof jullie verkopers zijn", "next_scene": "volg_prins_deel_zes"}
+        ],
+        "background_image": "bestanden/Verdergaan.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "eerste_slechte_eind": {
+        "plaats": "Corsair land, Gondor",
+        "text": "De Corsairs hebben jullie al lang gezien en zijn erg snel. Ze rijden op jullie af en nemen jullie gevangen. Helaas.",
+        "options": [
+            {"text": "Afgelopen", "next_scene": "quit2", "punten": 10}
+        ],
+        "background_image": "bestanden/Gevangen.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "volg_prins_deel_zes": {
+        "plaats": "Bij Corsair land, Gondor",
+        "text": "De Corsairs kijken met verwarde gezichten naar jullie. Normaliter vluchten anderen voor ze. Jullie doen net alsof jullie handelaars zijn en gek genoeg geloven ze jullie. Als ze uiteindelijk doorrijden, bedankt de prins je",
+        "options": [
+            {"text": "Verder", "next_scene": "volg_prins_deel_zeven"}
+        ],
+        "background_image": "bestanden/Verdergaan.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "volg_prins_deel_zeven": {
+        "plaats": "Bij Corsair land, Gondor",
+        "text": "Imrahil: U heeft ons beiden gered. Ik wil u graag uitnodigen voor een feestmaal in mijn paleis. Als blijk van mijn dank. Gaat u nu alstublieft door naar Dol Amroth en wacht op mij. Ik wil u niet onnodig in gevaar brengen.",
+        "options": [
+            {"text": "Verder", "next_scene": "volg_prins_deel_acht"}
+        ],
+        "background_image": "bestanden/Verdergaan_imrahil.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "volg_prins_deel_acht": {
+        "plaats": "Bij Corsair land, Gondor",
+        "text": "Je bedankt de prins en draait je om, zodat je toch weer verder kunt naar Dol Amroth.",
+        "options": [
+            {"text": "Verder", "next_scene": "naar_dol_amroth"}
+        ],
+        "background_image": "bestanden/Verdergaan_imrahil.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "naar_dol_amroth": {
+        "plaats": "Richting Dol Amroth, Gondor",
+        "text": "Op je pad kom je weer een kruising tegen. Welke kant ga je op?",
+        "options": [
+            {"text": "Oost", "next_scene": "naar_bos"},
+            {"text": "West", "next_scene": "tweede_slechte_einde"},
+            {"text": "Noord", "next_scene": "naar_dol_amroth_deel_twee"}
+        ],
+        "background_image": "bestanden/Verdergaan.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "naar_bos": {
+        "plaats": "Bospad, Gondor",
+        "text": "Je besluit de Oostkant op te gaan. Als je een tijdje loopt kom je bij een klein bos. Je ziet een beekje en besluit daar even te rusten.",
+        "options": [
+            {"text": "Verder", "next_scene": "naar_dol_amroth_deel_twee"}
+        ],
+        "background_image": "bestanden/Rusten.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "tweede_slechte_einde": {
+        "plaats": "Corsair land, Gondor",
+        "text": "Dit was geen goede richting. Je loopt een tijdje door en komt opeens van meerdere kanten een groep Corsairs tegen. Ze nemen je gevangen en je kunt niet meer verder.",
+        "options": [
+            {"text": "Afgelopen", "next_scene": "quit2", "punten": 10}
+        ],
+        "background_image": "bestanden/Gevangen.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "naar_dol_amroth_deel_twee": {
+        "plaats": "Richting Dol Amroth, Gondor",
+        "text": "Je loopt door. Dol Amroth komt steeds dichterbij. Je hoopt dat je hulp zult krijgen van de zwanenridders.",
+        "options": [
+            {"text": "Verder", "next_scene": "naar_dol_amroth_deel_drie"}
+        ],
+        "background_image": "bestanden/Onderweg_een.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "naar_dol_amroth_deel_drie": {
+        "plaats": "Dol Amroth, Gondor",
+        "text": "Na een tijdje verder lopen kom je eindelijk in Dol Amroth aan. De stad is mooier dan je verwacht had. Je kunt nu een paar kanten op gaan. Waar ga je naartoe?",
+        "options": [
+            {"text": "Naar de zwanenridders", "next_scene": "meteen_door"},
+            {"text": "Naar de pub", "next_scene": "naar_pub"},
+            {"text": "Naar de weg vragen", "next_scene": "naar_weg_vragen"}
+        ],
+        "background_image": "bestanden/In_Dol_Amroth.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "meteen_door": {
+        "plaats": "Dol Amroth, Gondor",
+        "text": "Je wilt meteen door naar de zwanenridders. Echter ken je deze stad niet goed genoeg. Je dwaalt voor een tijdje, maar accepteert daarna dat je alleen maar tijd aan het verdoen ben.",
+        "options": [
+            {"text": "Verder", "next_scene": "naar_weg_vragen"}
+        ],
+        "background_image": "bestanden/In_Dol_Amroth.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "naar_pub": {
+        "plaats": "Pub in Dol Amroth, Gondor",
+        "text": "Je besluit eerst van je reis bij te komen in de pub. Je gaat bij de bar zitten en bestelt een sterke ale. Je luistert even naar de vrolijke muziek en kijkt naar de dansende mensen. Na even rusten ga je verder naar de zwanenridders.",
+        "options": [
+            {"text": "Verder", "next_scene": "naar_weg_vragen"}
+        ],
+        "background_image": "bestanden/Pub.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "naar_weg_vragen": {
+        "plaats": "Dol Amroth, Gondor",
+        "text": "Je besluit de weg te vragen aan de eerste vrouw die je ziet. Ze wijst je precies de weg naar de zwanenridders.",
+        "options": [
+            {"text": "Verder", "next_scene": "goed_einde"}
+        ],
+        "background_image": "bestanden/In_Dol_Amroth.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "goed_einde": {
+        "plaats": "Dol Amroth, Gondor",
+        "text": "Als je bij ze aankomt, praat je met hun generaal. Hij vertelt je over hun prins, Imrahil, en dat hij onderweg is om meer hulp te halen tegen de Corsairs. Je vertelt ze dat je ze bent tegengekomen en dat je ook hun prins hebt ontmoet. Jouw vriendelijke ontmoeting met hem overtuigt ze je te willen helpen. Je hebt met succes hulp gekregen van de zwanenridders. Gefeliciteerd.",
+        "options": [
+            {"text": "Afgelopen", "next_scene": "quit2", "punten": 10}
+        ],
+        "background_image": "bestanden/Zwanenridders.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "quit2": {
+        "plaats": "Einde",
+        "text": "Vaarwel!",
+        "options": [
+            {"text": "terug naar main menu", "next_scene": "quit"}
+        ],
+        "background_image": "bestanden/Zwanenridders.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "hobbit_is_gaaf": {
+        "plaats": "In de landschappen van Gondor",
+        "text": "Je haalt van een of andere duistere plek wat worstjes tevoorschijn en bakt ze lekker boven een snel gemaakt kampvuurtje. Je bent natuurlijk een hobbit dus een goede maaltijd tijdens het rusten is altijd van levensbelang.",
+        "options": [
+            {"text": "Verder", "next_scene": "rusten_deel_twee"}
+        ],
+        "background_image": "bestanden/Rusten_een.jpeg",
+        "music": "bestanden/11 The Ring Goes South.mp3"
+    },
+    "gevecht": {
+        "plaats": "Bergpad, Gondor",
+        "text": "Imrahil staat helemaal klaar om je aan te vallen, wat ga je doen om uit deze situatie te komen?",
+        "options": [
+            {"text": "Probeer weg te rennen", "next_scene": "ontsnappen"},
+            {"text": "{speciale_aanval} {bruikbaar}", "next_scene": "gevecht_speciale_aanvallen"},
+            {"text": "Val aan", "next_scene": "gevecht_aanvallen"}
+        ],
+        "background_image": "bestanden/Onderweg_een_imrahil.jpeg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "gevecht_aanvallen": {
+        "plaats": "Bergpad, Gondor",
+        "text": "{naam} probeert Imrahil aan te vallen",
+        "options": [
+            {"text": "Verder", "next_scene": "gevecht_aanvallen_gelukt"}
+        ],
+        "background_image": "bestanden/Onderweg_een_imrahil.jpeg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+     "gevecht_speciale_aanvallen": {
+        "plaats": "Bergpad, Gondor",
+        "text": "Je probeerd Imrahil aan te vallen",
+        "options": [
+            {"text": "Verder", "next_scene": "gevecht_speciale_aanvallen_gelukt"}
+        ],
+        "background_image": "bestanden/Onderweg_een_imrahil.jpeg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "gevecht_speciale_aanvallen_mislukt": {
+        "plaats": "Bergpad, Gondor",
+        "text": "Je kan je speciale aanval niet meer gebruiken",
+        "options": [
+            {"text": "Verder", "next_scene": "gevecht"}
+        ],
+        "background_image": "bestanden/Onderweg_een_imrahil.jpeg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+     "gevecht_speciale_aanvallen_gelukt": {
+        "plaats": "Bergpad, Gondor",
+        "text": "{speciale_aanval_text}",
+        "options": [
+            {"text": "Verder", "next_scene": "gevecht_aangevallen"}
+        ],
+        "background_image": "bestanden/Onderweg_een_imrahil.jpeg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "gevecht_aanvallen_gelukt": {
+        "plaats": "Bergpad, Gondor",
+        "text": "{naam} valt Imrahil aan",
+        "options": [
+            {"text": "Verder", "next_scene": "gevecht_aangevallen"}
+        ],
+        "background_image": "bestanden/Onderweg_een_imrahil.jpeg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "gevecht_aangevallen": {
+        "plaats": "Bergpad, Gondor",
+        "text": "Imrahil valt {naam} aan",
+        "options": [
+            {"text": "Verder", "next_scene": "gevecht"}
+        ],
+        "background_image": "bestanden/Onderweg_een_imrahil.jpeg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "gevecht_aangevallen_mislukt": {
+        "plaats": "Balrog Nest, Moria mijnen",
+        "text": "Imrahil lukt het niet jouw sterke verdediging te breken",
+        "options": [
+            {"text": "Verder", "next_scene": "gevecht"}
+        ],
+        "background_image": "bestanden/Onderweg_een_imrahil.jpeg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "gevecht_aanvallen_mislukt": {
+        "plaats": "Bergpad, Gondor",
+        "text": "Imrahil vernietigt {naam}",
+        "options": [
+            {"text": "Verder", "next_scene": "quit2"}
+        ],
+        "background_image": "bestanden/Onderweg_een_imrahil.jpeg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "gevecht_monster_verslagen": {
+        "plaats": "Bergpad, Gondor",
+        "text": "{naam} heeft Imrahil compleet verslagen en je besluit om nu weer naar Dol Amroth te gaan zoeken",
+        "options": [
+            {"text": "Verder", "next_scene": "level_up"}
+        ],
+        "background_image": "bestanden/Onderweg_een_imrahil.jpeg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "ontsnappen": {
+        "plaats": "Bergpad, Gondor",
+        "text": "{naam} probeert te ontspappen",
+        "options": [
+            {"text": "Verder", "next_scene": "ontsnapt"}
+        ],
+        "background_image": "bestanden/Onderweg_een_imrahil.jpeg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "gevonden": {
+        "plaats": "Bergpad, Gondor",
+        "text": "Imrahil spot je en maakt zich klaar om je aan te vallen!",
+        "options": [
+            {"text": "Verder", "next_scene": "gevecht_aangevallen"}
+        ],
+        "background_image": "bestanden/Onderweg_een_imrahil.jpeg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "ontsnapt": {
+        "plaats": "Bergpad, Gondor",
+        "text": "Het is gelukt om te ontsnappen! je besluit om nu weer naar Dol Amroth te gaan zoeken",
+        "options": [
+            {"text": "Verder", "next_scene": "naar_dol_amroth"}
+        ],
+        "background_image": "bestanden/Onderweg_een_imrahil.jpeg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    },
+    "level_up": {
+        "plaats": "Balrog Nest, Moria mijnen",
+        "text": "{naam} is level up! Als zijn statistieken gaan met 1 omhoog en krijgt al zijn levens terug",
+        "options": [
+            {"text": "Verder", "next_scene": "naar_dol_amroth"}
+        ],
+        "background_image": "bestanden/Onderweg_een_imrahil.jpeg",
+        "music": "bestanden/13 The Bridge Of Khazad Dum.mp3"
+    }
+}
